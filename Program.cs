@@ -8,8 +8,6 @@ namespace QueueTime
     {
         static void Main(string[] args)
         {
-            int n = 2;
-            int[] customers = { 2, 3, 10 };
 
             Console.WriteLine(HW1.QueueTime(customers, n));
         }
@@ -30,6 +28,7 @@ namespace QueueTime
 
             for (int i = 0; i < customers.Length; i++)
             {
+                for (int k = 1; k < cashbox.Length; k++)
                 for (int k = 0; k < cashbox.Length; k++)
                 {
                     if (cashbox[k] < cashbox[min]) 
